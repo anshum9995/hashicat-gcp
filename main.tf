@@ -60,12 +60,9 @@ resource "google_compute_instance" "hashicat" {
 
   labels = {
     name = "hashicat"
-  }
-
-  labels = {
     department = "devops"
   }
-
+    
 }
 
 resource "null_resource" "configure-cat-app" {
